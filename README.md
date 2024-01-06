@@ -45,7 +45,7 @@ Giúp đưa ra các chiến lược, khuyến nghị trong tương lai
 + Data Science: xử lý dữ liệu phức tạp với quy mô lớn hơn, tập trung vô xây dựng mô hình để đưa ra quyết định dựa trên dữ liệu cho tương lai
 
 ### Quy trình thực hiện dự án data science
-(file:///var/folders/jp/kk66dr2x2hs5h4z658ylk3kh0000gn/T/TemporaryItems/NSIRD_screencaptureui_wIDBRA/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202024-01-07%20lu%CC%81c%2000.52.48.png)
+!(file:///var/folders/jp/kk66dr2x2hs5h4z658ylk3kh0000gn/T/TemporaryItems/NSIRD_screencaptureui_wIDBRA/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202024-01-07%20lu%CC%81c%2000.52.48.png)
 
 ### Python và các thư viện mở rộng 
 ### Thiết lập môi trường làm việc
