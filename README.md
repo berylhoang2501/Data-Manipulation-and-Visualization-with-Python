@@ -45,8 +45,9 @@ Giúp đưa ra các chiến lược, khuyến nghị trong tương lai
 + Data Science: xử lý dữ liệu phức tạp với quy mô lớn hơn, tập trung vô xây dựng mô hình để đưa ra quyết định dựa trên dữ liệu cho tương lai
 
 ### Quy trình thực hiện dự án data science
-!(file:///var/folders/jp/kk66dr2x2hs5h4z658ylk3kh0000gn/T/TemporaryItems/NSIRD_screencaptureui_wIDBRA/A%CC%89nh%20chu%CC%A3p%20Ma%CC%80n%20hi%CC%80nh%202024-01-07%20lu%CC%81c%2000.52.48.png)
+<img width="1094" alt="Ảnh chụp Màn hình 2024-01-07 lúc 00 59 03" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/0dc7a414-a8b2-4858-ad6f-7a1f3d35de45">
 
+Business understanding: hiểu vấn đề, lựa ra hướng phân tích và tiếp cận -> Analytics approach -> Data requirements -> Data collection -> Data understanding -> Data preparation (chiếm rất nhiều tgian, nếu k xử lý dl tốt thì mô hình sẽ chạy không hiệu quả) 
 ### Python và các thư viện mở rộng 
 ### Thiết lập môi trường làm việc
 ### Ngôn ngữ Markdown 
