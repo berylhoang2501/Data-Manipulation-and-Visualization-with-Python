@@ -50,4 +50,9 @@ Giúp đưa ra các chiến lược, khuyến nghị trong tương lai
 Business understanding: hiểu vấn đề, lựa ra hướng phân tích và tiếp cận -> Analytics approach -> Data requirements -> Data collection -> Data understanding -> Data preparation (chiếm rất nhiều tgian, nếu k xử lý dl tốt thì mô hình sẽ chạy không hiệu quả) 
 ### Python và các thư viện mở rộng 
 ### Thiết lập môi trường làm việc
+
+## 6/1/2024: Buổi học 2: Tổng quan Data Science
 ### Ngôn ngữ Markdown 
+
+## 6/1/2024: Buổi học 3: 
+
