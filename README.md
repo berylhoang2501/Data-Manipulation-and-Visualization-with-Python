@@ -61,7 +61,7 @@ Business understanding: hiểu vấn đề, lựa ra hướng phân tích và ti
 - Vẽ đường nằm ngang: ---
 - Nhấn mạnh đoạn code: `nội dung`
 - Nhấn mạnh nguyên đoạn code: dùng 3 dấu ``` để mở và đóng đoạn code
-- [Tham khảo cú pháp markdown](https://www.markdownguide.org/cheat-sheet/),(https://www.markdowntutorial.com/lesson/1/)
+- [Tham khảo cú pháp markdown] (https://www.markdownguide.org/cheat-sheet/),(https://www.markdowntutorial.com/lesson/1/)
 
 ## 6/1/2024: Buổi học 3: 
 
