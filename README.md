@@ -53,9 +53,15 @@ Business understanding: hiểu vấn đề, lựa ra hướng phân tích và ti
 
 ## 6/1/2024: Buổi học 2: Tổng quan Data Science
 ### Ngôn ngữ Markdown 
-- Chèn link: [chú thích](link)
+- Chèn link: [nội dung mô tả](địa chỉ trang web)
 - Chèn hình ảnh: ![chú thích](link)
 - Block quotes: >
+- Cú pháp danh sách: * nội dung
+- Danh sách có số thứ tự: 1. nội dung
+- Vẽ đường nằm ngang: ---
+- Nhấn mạnh đoạn code: `nội dung`
+- Nhấn mạnh nguyên đoạn code: dùng 3 dấu ``` để mở và đóng đoạn code
+- [Tham khảo cú pháp markdown](https://www.markdownguide.org/cheat-sheet/),(https://www.markdowntutorial.com/lesson/1/)
 
 ## 6/1/2024: Buổi học 3: 
 
