@@ -53,6 +53,9 @@ Business understanding: hiểu vấn đề, lựa ra hướng phân tích và ti
 
 ## 6/1/2024: Buổi học 2: Tổng quan Data Science
 ### Ngôn ngữ Markdown 
+- Chèn link: [chú thích](link)
+- Chèn hình ảnh: ![chú thích](link)
+- Block quotes: >
 
 ## 6/1/2024: Buổi học 3: 
 
