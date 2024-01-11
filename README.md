@@ -68,12 +68,22 @@ Business understanding: hiểu vấn đề, lựa ra hướng phân tích và ti
 - Là nền tảng của nhiều thư viện khác: pandas (series-dựa trên cấu trúc mảng 1 chiều và data frame-dựa trên mảng nhiều chiều), SciPy, Scikit-learn, PyTorch
 
 **So sánh list và numpy array**
-- List
-* Cho phép lưu trữ nhiều kiểu dữ liệu khác nhau
-* 
+- List: 
 
-- Numpy array đồng bộ về cùng 1 kiểu dữ liệu
+Cho phép lưu trữ nhiều kiểu dữ liệu khác nhau
+
+Chiếm dung lượng bộ nhớ nhiều hơn hẳn Numpy
+
+Tính toán sử dụng vòng lặp
+
+- Numpy array:
+
+Đồng bộ về cùng 1 kiểu dữ liệu
+
+Tính toán trực tiếp
+
 ### Mảng một chiều
+
 ### Mảng nhiều chiều
 
 
