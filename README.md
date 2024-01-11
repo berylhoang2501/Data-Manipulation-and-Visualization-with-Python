@@ -66,6 +66,7 @@ Business understanding: hiểu vấn đề, lựa ra hướng phân tích và ti
 - Numpy (Numerical Python)
 - Thư viện chuyên xử lý dữ liệu số
 - Là nền tảng của nhiều thư viện khác: pandas (series-dựa trên cấu trúc mảng 1 chiều và data frame-dựa trên mảng nhiều chiều), SciPy, Scikit-learn, PyTorch
+
 **So sánh list và numpy array**
 - List cho phép lưu trữ nhiều kiểu dữ liệu khác nhau
 - Numpy array đồng bộ về cùng 1 kiểu dữ liệu
