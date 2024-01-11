@@ -50,8 +50,6 @@ Giúp đưa ra các chiến lược, khuyến nghị trong tương lai
 Business understanding: hiểu vấn đề, lựa ra hướng phân tích và tiếp cận -> Analytics approach -> Data requirements -> Data collection -> Data understanding -> Data preparation (chiếm rất nhiều tgian, nếu k xử lý dl tốt thì mô hình sẽ chạy không hiệu quả) 
 ### Python và các thư viện mở rộng 
 ### Thiết lập môi trường làm việc
-
-## 6/1/2024: Buổi học 2: Tổng quan Data Science
 ### Ngôn ngữ Markdown 
 - Chèn link: [nội dung mô tả](địa chỉ trang web)
 - Chèn hình ảnh: ![chú thích](link)
@@ -63,5 +61,16 @@ Business understanding: hiểu vấn đề, lựa ra hướng phân tích và ti
 - Nhấn mạnh nguyên đoạn code: dùng 3 dấu ``` để mở và đóng đoạn code
 - [Tham khảo cú pháp markdown](https://www.markdownguide.org/cheat-sheet/),(https://www.markdowntutorial.com/lesson/1/)
 
-## 6/1/2024: Buổi học 3: 
+## 6/1/2024: Buổi học 2: Thư viện Numpy
+### Giới thiệu 
+- Numpy (Numerical Python)
+- Thư viện chuyên xử lý dữ liệu số
+- Là nền tảng của nhiều thư viện khác: pandas (series-dựa trên cấu trúc mảng 1 chiều và data frame-dựa trên mảng nhiều chiều), SciPy, Scikit-learn, PyTorch
+**So sánh list và numpy array**
+- List cho phép lưu trữ nhiều kiểu dữ liệu khác nhau
+- Numpy array đồng bộ về cùng 1 kiểu dữ liệu
+### Mảng một chiều
+### Mảng nhiều chiều
+
+
 
