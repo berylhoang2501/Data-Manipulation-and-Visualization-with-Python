@@ -82,7 +82,59 @@ Tính toán sử dụng vòng lặp
 
 Tính toán trực tiếp
 
+## 11/1/2024: Buổi học 3: Thư viện Numpy
 ### Mảng một chiều
+
+thường đọc file txt 
+
+1. Tạo mảng một chiều
+- Cú pháp tạo mảng: numpy.array(object, dtype)
+
+object là đối tượng dạng danh sách (list, tuple, array,..). 
+
+dtype: kiểu dữ liệu của các phần tử trong mảng (sẽ theo ptu có kích thước lớn nhất)
+
+Nếu không có dtype thì sẽ theo kiểu dữ liệu lớn nhất của object.
+
+2. Đối tượng mảng có 2 thành phần: thuộc tính, phương thức
+- Truy xuất:
+
+tenmang.thuoctinh
+
+tenmang.phuongthuc()
+
+3. Một số thuộc tính khác
+- shape (thể hiện kích thước, số chiều), size (thể hiện số phần tử)
+- itemsize (kích thước của 1 phần tử)
+- nbytes (kích thước mảng)
+- dtype (tạo dữ liệu khác với object thì mới cần truyền dtype)
+
+4. Tạo mảng bằng các hàm tiện ích
+- np.zeros(n)
+
+n đựa vào là số phần tử
+- np.ones(n)
+- np.full(n,fill_value)
+
+*Hàm sắp xếp phần tử*
+- np.arange([start,]stop[,step,] giá trị stop luôn luôn bỏ
+- np.linspace(start,stop,num,endpoint)
+
+nếu endpoint = True => bins = (stop - start)/(num - 1) không lấy stop
+
+nếu endpoint = False => bins = (stop - start)/num lấy stop
+
+*Hàm tạo mảng ngẫu nhiên*
+np.random.rand(n)
+
+np.random.seed(n) -> ứng với mỗi số n sẽ là 1 bộ ngẫu nhiên, fix cứng
+
+5. Truy xuất phần tử trong mảng
+<img width="631" alt="Ảnh chụp Màn hình 2024-01-11 lúc 18 56 46" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/463c968c-0134-45cd-900f-972a2db570a8">
+
+5. Truy xuất phần tử
+6. Cập nhật dữ liệu mảng (thêm, xoá, sửa)
+  
 
 ### Mảng nhiều chiều
 
