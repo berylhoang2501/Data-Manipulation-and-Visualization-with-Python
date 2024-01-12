@@ -1,4 +1,4 @@
-# Data-Manipulation-and-Visualization-with-Python
+<img width="927" alt="Ảnh chụp Màn hình 2024-01-13 lúc 00 16 19" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/7f3004f3-7984-482e-929f-4fbf8e524b01"># Data-Manipulation-and-Visualization-with-Python
 ## 6/1/2024: Buổi học 1: Tổng quan Data Science
 ### Giới thiệu data science
 
@@ -85,7 +85,9 @@ Tính toán trực tiếp
 ## 11/1/2024: Buổi học 3: Thư viện Numpy
 ### Mảng một chiều
 
-thường đọc file txt 
+Mảng một chiều là một cấu trúc dữ liệu trong lập trình máy tính được sử dụng để lưu trữ một tập hợp các phần tử có cùng kiểu dữ liệu. Mỗi phần tử trong mảng được xác định bằng một chỉ số (index) duy nhất. Mảng một chiều còn được gọi là vector.
+
+Mảng một chiều thường dùng để đọc file txt 
 
 1. Tạo mảng một chiều
 - Cú pháp tạo mảng: numpy.array(object, dtype)
@@ -94,30 +96,25 @@ object là đối tượng dạng danh sách (list, tuple, array,..).
 
 dtype: kiểu dữ liệu của các phần tử trong mảng (sẽ theo ptu có kích thước lớn nhất)
 
-Nếu không có dtype thì sẽ theo kiểu dữ liệu lớn nhất của object.
+Nếu không có tham số dtype thì sẽ theo kiểu dữ liệu lớn nhất của object.
 
-2. Đối tượng mảng có 2 thành phần: thuộc tính, phương thức
+2. Thuộc tính của mạng
+- Đối tượng mảng có 2 thành phần : thuộc tính , phương thức(hàm)
 - Truy xuất:
 
 tenmang.thuoctinh
 
 tenmang.phuongthuc()
 
-3. Một số thuộc tính khác
-- shape (thể hiện kích thước, số chiều), size (thể hiện số phần tử)
-- itemsize (kích thước của 1 phần tử)
-- nbytes (kích thước mảng)
-- dtype (tạo dữ liệu khác với object thì mới cần truyền dtype)
+- Một số thuộc tính khác:
+<img width="927" alt="Ảnh chụp Màn hình 2024-01-13 lúc 00 16 19" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/644b4176-d99f-4491-9819-fd57689615e8">
 
-4. Tạo mảng bằng các hàm tiện ích
-- np.zeros(n)
-
-n đựa vào là số phần tử
-- np.ones(n)
-- np.full(n,fill_value)
+- Note: sử dụng dtype khi muốn lấy kiểu dữ liệu khác với kiểu dữ liệu của object, nếu không cần thì khỏi truyền dtype
+3. Tạo mảng bằng các hàm tiện ích
+  <img width="707" alt="Ảnh chụp Màn hình 2024-01-13 lúc 01 04 09" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/cd7cfe5e-2c55-4b66-a856-66ba3e08873e">
 
 *Hàm sắp xếp phần tử*
-- np.arange([start,]stop[,step,] giá trị stop luôn luôn bỏ
+- np.arange([start,]stop[,step,]
 - np.linspace(start,stop,num,endpoint)
 
 nếu endpoint = True => bins = (stop - start)/(num - 1) không lấy stop
