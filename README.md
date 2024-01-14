@@ -1,4 +1,3 @@
-<img width="927" alt="Ảnh chụp Màn hình 2024-01-13 lúc 00 16 19" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/7f3004f3-7984-482e-929f-4fbf8e524b01"># Data-Manipulation-and-Visualization-with-Python
 ## 6/1/2024: Buổi học 1: Tổng quan Data Science
 ### Giới thiệu data science
 
