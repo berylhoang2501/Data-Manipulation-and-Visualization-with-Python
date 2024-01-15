@@ -120,10 +120,7 @@ nếu endpoint = True => bins = (stop - start)/(num - 1) không lấy stop
 
 nếu endpoint = False => bins = (stop - start)/num lấy stop
 
-*Hàm tạo mảng ngẫu nhiên*
-np.random.rand(n)
-
-np.random.seed(n) -> ứng với mỗi số n sẽ là 1 bộ ngẫu nhiên, fix cứng
+* Tạo mảng bằng cách đọc vào tập tin txt
 
 5. Truy xuất phần tử trong mảng
 <img width="631" alt="Ảnh chụp Màn hình 2024-01-11 lúc 18 56 46" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/463c968c-0134-45cd-900f-972a2db570a8">
