@@ -97,7 +97,7 @@ dtype: kiểu dữ liệu của các phần tử trong mảng (sẽ theo ptu có
 
 Nếu không có tham số dtype thì sẽ theo kiểu dữ liệu lớn nhất của object.
 
-2. Thuộc tính của mạng
+2. Thuộc tính của mảng
 - Đối tượng mảng có 2 thành phần : thuộc tính , phương thức(hàm)
 - Truy xuất:
 
@@ -154,7 +154,26 @@ array,astype()
 
 ## 13/1/2024: Buổi học 4
 ### Mảng nhiều chiều
+1. Tạo mảng nhiều chiều
 
+Cú pháp: numpy.array(object,dtype) 
+
+Nếu có 2 cặp dấu ngoặc vuông ở đầu và 2 cặp dấu ngoặc vuông ở cuối thì là => mảng 2 chiều 
+
+<img width="595" alt="Ảnh chụp Màn hình 2024-01-26 lúc 14 42 04" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/5237e0d8-9004-4683-a80d-ea3365844f04">
+
+Đối với ví dụ trên thì chúng ta sẽ tạo ra 1 mảng có shape(4,5) tương ứng với 4 dòng và 5 cột 
+
+4 list con tương ứng với 4 dòng, mỗi 1 list con có 5 phần tử, 5 phần tử trong list tương ứng với 5 cột 
+
+2. Thuộc tính của mảng
+<img width="678" alt="Ảnh chụp Màn hình 2024-01-26 lúc 14 52 54" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/0fd4a6d1-f065-41ac-9acc-5ff5afa5be3b">
+
+3. Tạo mảng bằng các hàm tiện ích
+
+lúc truyền dữ liệu phải truyền theo dạng shape(a,b) đầy đủ các thông số chứ không thể ghi 1 thông số như mảng 1 chiều 
+
+<img width="671" alt="Ảnh chụp Màn hình 2024-01-26 lúc 15 01 12" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/972940fe-c3d6-4a98-a9c1-ee2577fa90da">
 
 ## Buổi học : Thư viện Numpy
 ### Làm sạch dữ liệu
