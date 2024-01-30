@@ -175,6 +175,10 @@ lúc truyền dữ liệu phải truyền theo dạng shape(a,b) đầy đủ c�
 
 <img width="671" alt="Ảnh chụp Màn hình 2024-01-26 lúc 15 01 12" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/972940fe-c3d6-4a98-a9c1-ee2577fa90da">
 
+4. Truy xuất phần tử trong mảng
+<img width="685" alt="Ảnh chụp Màn hình 2024-01-30 lúc 00 40 08" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/bf5a659d-c8e7-40e2-9d1a-eceac2a6c6cc">
+
+
 ## Buổi học : Thư viện Numpy
 ### Làm sạch dữ liệu
 1. Thay thế giá trị
