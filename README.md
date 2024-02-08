@@ -178,6 +178,28 @@ lúc truyền dữ liệu phải truyền theo dạng shape(a,b) đầy đủ c�
 4. Truy xuất phần tử trong mảng
 <img width="685" alt="Ảnh chụp Màn hình 2024-01-30 lúc 00 40 08" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/bf5a659d-c8e7-40e2-9d1a-eceac2a6c6cc">
 
+5. Cập nhật dữ liệu mảng (thêm, xoá, sửa)
+
+- Thêm: đối với mảng 2 chiều thì không thể thêm vào chỉ 1 phần tử vì sẽ làm phá vỡ cấu trúc của mảng 2 chiều. Chỉ được thêm nguyên dòng hoặc nguyên cột
+
+np.concatenate([chuỗi muốn thêm vào,chuỗi sẽ thêm vào ], axis=0) #thêm dòng #axis=0 mặc định cho trục dọc (dòng) #có thể truyền nhiều list vào chuỗi cần thêm vào (thêm nhiều chuỗi cùng 1 lúc)
+
+np.concatenate([chuỗi muốn thêm vào,chuỗi sẽ thêm vào ], axis=1) #thêm cột #axis=1 mặc định cho trục ngang (cột) #có thể truyền nhiều list vào chuỗi cần thêm vào (thêm nhiều chuỗi cùng 1 lúc)
+
+- Chèn: 
+np.insert(arr2d, position[s], new_row[s] là chuỗi cần chèn, axis=0) #thêm dòng #axis=0 mặc định cho trục dọc (dòng)
+
+np.insert(arr2d, position[s], new_col[s] là chuỗi cần chèn, axis=1) #thêm cột #axis=1 mặc định cho trục ngang (cột)
+
+- Xoá:
+
+- Sửa giá trị phần tử trong mảng:
+
+Bước 1: Truy xuất
+
+Bước 2: Gán giá trị mới (truy xuất ra bao nhiêu số thì gán đủ lại bấy nhiêu số)
+
+6. Thực hiện phép toán số học từng phần trên mảng
 
 ## Buổi học : Thư viện Numpy
 ### Làm sạch dữ liệu
