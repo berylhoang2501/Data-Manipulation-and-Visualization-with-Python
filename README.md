@@ -201,6 +201,38 @@ Bước 2: Gán giá trị mới (truy xuất ra bao nhiêu số thì gán đủ
 
 6. Thực hiện phép toán số học từng phần trên mảng
 
+![Ảnh chụp Màn hình 2024-02-10 lúc 17 57 40](https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/d3791d2d-edc5-41ec-8ca5-72c93a7e49f1)
+
+7. Các hàm thống kê cơ bản
+
+<img width="970" alt="Ảnh chụp Màn hình 2024-02-10 lúc 17 59 41" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/c8be4b91-978f-4995-a276-187017782d33">
+
+axis=0: thống kê các dòng trong cột
+axis=1: thống kê các cột trong dòng
+
+8. Hệ số tương quan Peason: np.corrcoef (correlation coefficients)
+- strong negative correlation (<0.7): Nếu một biến tăng, thì biến còn lại giảm, và ngược lại.
+
+<img width="347" alt="Ảnh chụp Màn hình 2024-02-10 lúc 18 57 31" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/1b9690ed-f6f4-49f5-9355-4197cb5834b0">
+
+- weak correlation (0-0.2)
+- strong positive correlation (>0.7): Nếu một biến tăng, thì biến còn lại cũng tăng, và ngược lại.
+
+9. Sắp xếp mảng:
+
+np.sort(arr, axis = 0 nếu theo cột và = 1 nếu theo dòng)
+
+10. Biến đổi mảng (reshape): thay đổi kích thước mảng, chiều của mảng (thay đổi số dòng, số cột)
+
+Biến đổi mảng 2 chiều thành mảng 1 chiều: arr2.reshape(-1)
+
+Chuyển vị: np.transpose() hoặc arr.T (chuyển dòng thành cột, cột thành dòng)
+
+11. Kết hợp mảng
+
+Tìm phần tử chung giữa 2 mảng: np.intersectld(_,_)
+Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
+
 ## Buổi học : Thư viện Numpy
 ### Làm sạch dữ liệu
 1. Thay thế giá trị
