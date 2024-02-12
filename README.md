@@ -81,7 +81,7 @@ Tính toán sử dụng vòng lặp
 
 Tính toán trực tiếp
 
-## 11/1/2024: Buổi học 3
+## 11/1/2024: Buổi học 3: Thư viện Numpy
 ### Mảng một chiều
 
 Mảng một chiều là một cấu trúc dữ liệu trong lập trình máy tính được sử dụng để lưu trữ một tập hợp các phần tử có cùng kiểu dữ liệu. Mỗi phần tử trong mảng được xác định bằng một chỉ số (index) duy nhất. Mảng một chiều còn được gọi là vector.
@@ -152,7 +152,7 @@ Bước 2: Gán giá trị mới
 
 array,astype()
 
-## 13/1/2024: Buổi học 4
+## 13/1/2024: Buổi học 4: Thư viện Numpy
 ### Mảng nhiều chiều
 1. Tạo mảng nhiều chiều
 
@@ -242,7 +242,7 @@ Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
 - Làm tròn 2 chữ số thập phân: np.round
 - Tính trung bình: np.mean
 
-## Buổi học : Thư viện Numpy
+## 14/1/2024: Buổi học 5: Thư viện Pandas
 ### Làm sạch dữ liệu
 1. Thay thế giá trị
 
