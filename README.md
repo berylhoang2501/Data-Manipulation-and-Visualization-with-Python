@@ -238,6 +238,10 @@ Chuyển vị: np.transpose() hoặc arr.T (chuyển dòng thành cột, cột t
 Tìm phần tử chung giữa 2 mảng: np.intersectld(_,_)
 Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
 
+**Một số hàm hay dùng**
+- Làm tròn 2 chữ số thập phân: np.round
+- Tính trung bình: np.mean
+
 ## Buổi học : Thư viện Numpy
 ### Làm sạch dữ liệu
 1. Thay thế giá trị
