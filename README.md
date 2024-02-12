@@ -216,7 +216,12 @@ axis=1: thống kê các cột trong dòng
 <img width="347" alt="Ảnh chụp Màn hình 2024-02-10 lúc 18 57 31" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/1b9690ed-f6f4-49f5-9355-4197cb5834b0">
 
 - weak correlation (0-0.2)
+
+<img width="278" alt="Ảnh chụp Màn hình 2024-02-13 lúc 00 18 03" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/618d167b-5e80-4206-b680-84c88a82668b">
+
 - strong positive correlation (>0.7): Nếu một biến tăng, thì biến còn lại cũng tăng, và ngược lại.
+
+<img width="292" alt="Ảnh chụp Màn hình 2024-02-13 lúc 00 18 21" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/867d2fc4-4017-4ff8-afa9-edbee594a9b5">
 
 9. Sắp xếp mảng:
 
