@@ -243,6 +243,33 @@ Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
 - Tính trung bình: np.mean
 
 ## 14/1/2024: Buổi học 5: Thư viện Pandas
+### Giới thiệu
+
+Thư viện Pandas giúp cho chúng ta xử lý dữ liệu, dữ liệu chủ yếu là dữ liệu có cấu trúc: dạng bảng như tập tim Excel, tập tim .csv, tập tin.txt, view từ CSDL 
+
+Dùng để: khám phá, làm sạch, phân tích và trực quan hoá
+
+Tốc độ xử lý cao, dễ thao tác
+
+Có 2 kiểu cấu trúc dữ liệu: Series (dựa trên cấu trúc mảng 1 chiều) và DataFrame (dựa trên cấu trúc mảng 2 chiều
+
+### Series
+
+- Là  cấu trúc dữ liệu 1 chiều có gán nhãn. Mỗi phần tử trong Series gồm value (data) và index (label)
+- Đặc điểm:
+
+Index ngầm định (không hiển thị ra bên ngoài, lấy theo numpy) vs. index tường minh (label - thấy được ở bên ngoài - có thể tự đặc)
+
+Các phần tử trong Series phải có cùng kiểu dữ liệu
+
+***1. Phương thức tạo series***
+pandas.Series (data [,index] [,dtype]
+
+[,index] nếu không truyền vào thì sẽ là dạng tường minh 0 base từ 0 -> n - 1
+
+[,dtype] mặc định lấy theo kiểu dữ liệu lớn nhất của data
+
+
 ### Làm sạch dữ liệu
 1. Thay thế giá trị
 
