@@ -263,12 +263,56 @@ Index ngầm định (không hiển thị ra bên ngoài, lấy theo numpy) vs. 
 Các phần tử trong Series phải có cùng kiểu dữ liệu
 
 ***1. Phương thức tạo series***
-pandas.Series (data [,index] [,dtype]
+
+- pandas.Series (data [,index] [,dtype])
 
 [,index] nếu không truyền vào thì sẽ là dạng tường minh 0 base từ 0 -> n - 1
 
 [,dtype] mặc định lấy theo kiểu dữ liệu lớn nhất của data
 
+[,index] tường minh là index có thể thấy được, người dùng tự xác định giá trị index, index có thể là số và là chuỗi 
+
+[,index] ngầm định là index không hiển thị ra bên ngoài (lấy theo numpy, index dương và index âm)
+
+load.txt giống genfromtxt nhưng load.txt chỉ đọc được file txt còn genfromtxt đọc được cả file csv
+
+***2. Thuộc tính***
+<img width="905" alt="Ảnh chụp Màn hình 2024-02-19 lúc 23 06 00" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/53d68f18-308c-408f-a3d7-55cf91cec030">
+
+cách in thuộc tính thì chỉ cần .thuộc tính
+
+***3. Phương thức***
+<img width="652" alt="Ảnh chụp Màn hình 2024-02-18 lúc 15 26 37" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/13f1111c-0366-4d2e-8bd2-ea9dbbc0d6ca">
+
+- .info(): hiển thị thông tin sơ bộ của dữ liệu
+- .head(n): hiển thị 5 dòng đầu, n mặc định là 5, có thể truyền thông số khác 5 vào
+- .describe(): thông tin thống kê chung
+
+***4. Truy xuất***
+
+<img width="977" alt="Ảnh chụp Màn hình 2024-02-19 lúc 23 33 01" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/071805f7-d09e-4442-9418-87cd0c57a1f6">
+
+(luôn luôn sử dụng dấu ngoặc vuông)
+
+- Đối với truy xuất 1 phần tử
+
+ser.loc[<lable>] -> tương đương với index tường minh
+
+ser.iloc[<index>] -> tương đương với 2 index ngầm định
+
+- Đối với truy xuất nhiều phần tử
+
+ser.loc[list of lable] -> không quy tắc
+
+ser.iloc[start:stop:step] -> có quy tắc
+
+- Đối với truy xuất theo điều kiện: sử dụng các biểu thức điều kiện giống trong mảng numpy
+
+***5. Phát hiện dữ liệu trùng (duplicate)***
+
+- ser.duplicated([keep]) # mặc định keep=first
+
+- ser.drop_duplicates(keep=False,inplace=True) #inplace = True thì thông tin mới được cập nhật trên chuỗi
 
 ### Làm sạch dữ liệu
 1. Thay thế giá trị
