@@ -321,9 +321,9 @@ ser.iloc[start:stop:step] -> có quy tắc
 
 pandas. DataFrame (data (, index] [, columns])
 
-■ data: dữ liệu (list, dict, ndarray, series, dataframe)
-■ index: danh sách nhãn dòng; index = ['tên dòng 1', 'tên dòng 2',...]
-■columns: danh sách nhãn cột; columns = ['tên cột 1', 'tên cột 2',...]
+- data: dữ liệu (list, dict, ndarray, series, dataframe)
+- index: danh sách nhãn dòng; index = ['tên dòng 1', 'tên dòng 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> n-1
+- columns: danh sách nhãn cột; columns = ['tên cột 1', 'tên cột 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> m-1
 
 ### Làm sạch dữ liệu
 1. Thay thế giá trị
