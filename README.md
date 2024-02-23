@@ -314,6 +314,17 @@ ser.iloc[start:stop:step] -> có quy tắc
 
 - ser.drop_duplicates(keep=False,inplace=True) #inplace = True thì thông tin mới được cập nhật trên chuỗi
 
+### DataFrame   
+- Là cấu trúc dữ liệu 2 chiều, được tổ chức theo dòng và cột
+
+***1. Phương thức tạo DataFrame***
+
+pandas. DataFrame (data (, index] [, columns])
+
+■ data: dữ liệu (list, dict, ndarray, series, dataframe)
+■ index: danh sách nhãn dòng; index = ['tên dòng 1', 'tên dòng 2',...]
+■columns: danh sách nhãn cột; columns = ['tên cột 1', 'tên cột 2',...]
+
 ### Làm sạch dữ liệu
 1. Thay thế giá trị
 
