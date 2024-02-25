@@ -366,14 +366,3 @@ Nguyên tắc phát hiện: phải giống trên tất cả các cột thì mớ
 
 
 
-
-
-### Làm sạch dữ liệu
-1. Thay thế giá trị
-
-Thay thế trên 1 cột: df['tên cột'].replace(giá_trị_cũ, giá_trị_mới)
-
-### Cập nhật và xử lý dữ liệu
-
-
-
