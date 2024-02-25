@@ -325,6 +325,49 @@ pandas. DataFrame (data (, index] [, columns])
 - index: danh sách nhãn dòng; index = ['tên dòng 1', 'tên dòng 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> n-1
 - columns: danh sách nhãn cột; columns = ['tên cột 1', 'tên cột 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> m-1
 
+***2. Đọc dữ liệu từ tập tin***
+<img width="387" alt="Ảnh chụp Màn hình 2024-02-23 lúc 17 51 02" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/5d4dbc71-3d17-4f71-adc4-707d24ec1b73">
+
+- Các tham số thông dụng: 
+<img width="679" alt="Ảnh chụp Màn hình 2024-02-23 lúc 19 14 41" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/c4ad871d-c334-4c0e-bc3d-583d5a0c7bf4">
+
+***3. Thuộc tính***
+- dtypes có s: kiểu dữ liệu của các cột 
+<img width="647" alt="Ảnh chụp Màn hình 2024-02-25 lúc 15 21 50" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/cee91406-f63e-4f0e-bce4-9cc94308bb53">
+
+***4. Phương thức***
+
+***5. Truy xuất dữ liệu***
+
+<img width="706" alt="Ảnh chụp Màn hình 2024-02-25 lúc 16 28 03" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/1b616712-62bf-4499-ae82-1d40d128dfea">
+
+- Truy xuất 1 phần tử 
+
+- Truy xuất nhiều phần tử
+
+Có quy tắc thì dùng theo dạng start:stop:step, không có quy tắc thì dùng theo dạng list và phải bỏ trong [ ]
+
+- Truy xuất dữ liệu theo cột
+
++ 1 cột, nhiều cột: loc, iloc, truy xuất nhanh thông qua tên cột (col lable), .tên cột (cách này thì không thể dùng để truy xuất nhiều cột)
+
+- Truy xuất dữ liệu theo dòng
+
+Không thể truy xuất trực tiếp được như cột 
+
+- Truy xuất theo điều kiện: chỉ có loc là lọc theo điều kiện còn iloc chỉ lọc nhanh được chứ không thể lọc theo điều kiện 
+
+- Thiết lập set index
+
+***6. Xử lý dữ liệu trùng***
+
+Nguyên tắc phát hiện: phải giống trên tất cả các cột thì mới được gọi là trùng 
+
+
+
+
+
+
 ### Làm sạch dữ liệu
 1. Thay thế giá trị
 
