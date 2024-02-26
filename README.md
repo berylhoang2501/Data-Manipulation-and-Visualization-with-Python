@@ -384,3 +384,18 @@ Nguyên tắc phát hiện: phải giống trên tất cả các cột thì mớ
 df.fillna (method='ffill'): lấy dòng trên điền xuống
 
 df.fillna (method='backfill'): lấy dòng dưới điền lên
+
+- Điền bằng dữ liệu khác
+
+- Xóa bỏ dòng/cột dữ liệu có chứa nan: df.dropna(axis=0) (mặc định axis = 0 theo trục index của dòng)
+
+- Thực hiện nội suy tuyến tính: df.interpolate() (tính độ dài của 1 khoảng cách rồi sau đó nhân lên)
+
+***3. Cập nhật và xử lý dữ liệu***
+
+- Thêm các dòng vào cuối dataframe (gộp 2 dataframe)
+
+- Sửa giá trị trong dataframe
+
+Bước 1: truy xuất
+Bước 2: gán giá trị mới
