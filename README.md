@@ -363,6 +363,24 @@ Không thể truy xuất trực tiếp được như cột
 
 Nguyên tắc phát hiện: phải giống trên tất cả các cột thì mới được gọi là trùng 
 
+## 18/1/2024: Buổi học 6: Thư viện Pandas
+### Làm sạch dữ liệu 
 
+- dữ liệu có vấn đề: bị trùng, không hợp lệ, có giá trị âm cho những trường dữ liệu mang giá trị dương.
 
+- xử lý các vấn đề về dữ liệu: loại bỏ dữ liệu trùng, thay thế giá trị, điền bằng dữ liệu phía trên hoặc phía dưới cho những giá trị NaN, loại bỏ các cột, loại bỏ các dòng, nội truy giá trị
+  
+***1. Thay thế giá trị***
 
+- thay trên 1 cột: df['tên cột'].replace(giá trị cũ, giá trị mới)
+
+- thay thế trên toàn bộ dataframe: df = df.replace(giá trị cũ, giá trị mới)
+
+***2. Xử lý dữ liệu NaN***
+
+- Phát hiện NaN
+- Điền bằng dữ liệu phía trên hoặc phía dưới
+
+df.fillna (method='ffill'): lấy dòng trên điền xuống
+
+df.fillna (method='backfill'): lấy dòng dưới điền lên
