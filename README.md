@@ -391,27 +391,30 @@ df.fillna (method='backfill'): lấy dòng dưới điền lên
 
 - Thực hiện nội suy tuyến tính: df.interpolate() (tính độ dài của 1 khoảng cách rồi sau đó nhân lên)
 
-***3. Cập nhật và xử lý dữ liệu***
+###Cập nhật và xử lý dữ liệu
 
-- Thêm các dòng vào cuối dataframe (gộp 2 dataframe)
+***1. Thêm các dòng vào cuối dataframe (gộp 2 dataframe)***
 
-- Sửa giá trị trong dataframe
+***2. Sửa giá trị trong dataframe***
 
 Bước 1: truy xuất
 Bước 2: gán giá trị mới
 
 loc là truy xuất theo điều kiện, còn iloc là truy xuất nhanh theo dạng start stop step 
 
-- Xoá dòng trong dataframe
+***3. Xoá dòng và cột trong dataframe***
 
 xoá theo lable (tường minh)
 
 xoá theo index (ngầm định)
 
-- Chuyển đỗi kiểu dữ liệu
+***4. Chuyển đỗi kiểu dữ liệu***
 
 df['tên cột'].astype(kiểu dữ liệu)
 
-- Đổi tên cột trong dataframe
-- Xử lý tạo cột mới trong dataframe
-- Phương thức thao tác trên chuỗi
+***5. Đổi tên cột trong dataframe***
+***6. Xử lý tạo cột mới trong dataframe***
+***7. Phương thức thao tác trên chuỗi***
+- Tìm chuỗi bắt đầu bằng chuỗi con : startswith
+- Tìm chuỗi chứa chuỗi con : contains
+- Đổi sang chữ thường: .lower
