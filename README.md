@@ -399,3 +399,19 @@ df.fillna (method='backfill'): lấy dòng dưới điền lên
 
 Bước 1: truy xuất
 Bước 2: gán giá trị mới
+
+loc là truy xuất theo điều kiện, còn iloc là truy xuất nhanh theo dạng start stop step 
+
+- Xoá dòng trong dataframe
+
+xoá theo lable (tường minh)
+
+xoá theo index (ngầm định)
+
+- Chuyển đỗi kiểu dữ liệu
+
+df['tên cột'].astype(kiểu dữ liệu)
+
+- Đổi tên cột trong dataframe
+- Xử lý tạo cột mới trong dataframe
+- Phương thức thao tác trên chuỗi
