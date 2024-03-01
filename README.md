@@ -415,6 +415,29 @@ df['tên cột'].astype(kiểu dữ liệu)
 ***5. Đổi tên cột trong dataframe***
 ***6. Xử lý tạo cột mới trong dataframe***
 ***7. Phương thức thao tác trên chuỗi***
-- Tìm chuỗi bắt đầu bằng chuỗi con : startswith
+- Tìm chuỗi bắt đầu bằng chuỗi con : str.startswith
 - Tìm chuỗi chứa chuỗi con : contains
 - Đổi sang chữ thường: .lower
+
+***8. Phương thức thao tác trên chuỗi với Regular expression***
+Là chuỗi ký tự đặc biệt đươc dùng để tìm kiếm và trích xuất các chuỗi theo một cấu trúc cụ thể
+- ký tự []: khớp với 1 trong tập hợp ký tự
+- ký tự ^: bắt đầu của chuỗi
+- ký tự $: kết thúc của chuỗi, dùng kết hợp với dấu . (bất kì kí tự nào)
+- dấu * : ký tự trước đó xuất hiện 0 hoặc nhiều lần
+<img width="1046" alt="Ảnh chụp Màn hình 2024-02-29 lúc 13 46 03" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/5a6ae250-19ba-4fce-9530-c5619f24943d">
+<img width="590" alt="Ảnh chụp Màn hình 2024-02-29 lúc 13 55 03" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/5af26d6d-6888-4e09-9aff-b30823a82335">
+
+- Thay thế trên chuỗi: re.sub(pattern, replace, string)
+- Thay thế trên dataframe: replace ()  df['cột cần thay thế'] = df['cột cần thay thế''].str.replace('\D+', '', regex=True).astype('int') #'\D+' là một biểu thức chính quy
+
+- Tìm ra các chuỗi con dựa trên chuỗi ban đầu: findall ()
+- Rút trích dữ liệu theo nhóm: extract() , phải đưa vào biểu thức chính quy
+
+- Tìm trong chuỗi có chuỗi con nào có con số xuất hiện 1 đến nhiều lần không: search() #có thể dùng để kiếm tra trc khi dùng hàm findall
+
+***9. Phương thức thao tác trên dữ liệu thời gian***
+
+pd.to_datetime(df[<col>], [format])
+
+<img width="590" alt="Ảnh chụp Màn hình 2024-02-29 lúc 16 35 16" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/a12d3458-038d-45a8-a28d-8edd364995ea">
