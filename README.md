@@ -451,3 +451,22 @@ pd.to_datetime(df[<col>], [format])
 
 - đối với left và right:
  <img width="1070" alt="Ảnh màn hình 2024-03-04 lúc 18 35 09" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/17f576d2-c366-475b-95a7-f082cdefe0f3">
+
+### Thống kê gom nhóm
+***1. Thống kê***
+<img width="1045" alt="Ảnh màn hình 2024-03-05 lúc 00 55 47" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/2338f4c5-4c2f-49a0-877c-b3c6b8026a7d">
+
+- sort_values() #sắp xếp giá trị theo thứ tự tăng dần, mặc định ascending = True. Nếu ascending bằng False thì là sắp xếp theo thứ tự giảm dần
+- Thống kê ở dataframe khác series ở chỗ đối với df thì phải truyền thêm thông số cột vào (ví dụ muốn thống kê theo cột nào, muốn count trên cột nào)
+
+***2. Group by***
+
+
+
+
+
+
+
+
+
+
