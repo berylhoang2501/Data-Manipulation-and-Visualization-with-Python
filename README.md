@@ -391,7 +391,7 @@ df.fillna (method='backfill'): lấy dòng dưới điền lên
 
 - Thực hiện nội suy tuyến tính: df.interpolate() (tính độ dài của 1 khoảng cách rồi sau đó nhân lên)
 
-###Cập nhật và xử lý dữ liệu
+### Cập nhật và xử lý dữ liệu
 
 ***1. Thêm các dòng vào cuối dataframe (gộp 2 dataframe)***
 
@@ -441,3 +441,13 @@ Là chuỗi ký tự đặc biệt đươc dùng để tìm kiếm và trích xu
 pd.to_datetime(df[<col>], [format])
 
 <img width="590" alt="Ảnh chụp Màn hình 2024-02-29 lúc 16 35 16" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/a12d3458-038d-45a8-a28d-8edd364995ea">
+
+- Timestamp (int64): số giây trôi qua từ 00:00:00
+
+***10. Gộp dữ liệun***
+
+- đối với outer và inner: 
+<img width="1028" alt="Ảnh màn hình 2024-03-04 lúc 18 34 29" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/ff5dd712-d6f6-437e-b420-045a71ef685e">
+
+- đối với left và right:
+ <img width="1070" alt="Ảnh màn hình 2024-03-04 lúc 18 35 09" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/17f576d2-c366-475b-95a7-f082cdefe0f3">
