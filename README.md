@@ -460,7 +460,11 @@ pd.to_datetime(df[<col>], [format])
 - Thống kê ở dataframe khác series ở chỗ đối với df thì phải truyền thêm thông số cột vào (ví dụ muốn thống kê theo cột nào, muốn count trên cột nào)
 
 ***2. Group by***
+- nhóm -> thống kê -> sắp xếp
+- hàm thống kê tích hợp agg[()] sẽ nhận vào 1 list các main function của các hàm thống kê
+- nếu thống kê từ 2 cột trở lên thì nhớ đưa vào thông số as_index=False) để đẩy dữ liệu về dạng dataframe
 
+***3. Thống kê dùng crosstab***
 
 
 
