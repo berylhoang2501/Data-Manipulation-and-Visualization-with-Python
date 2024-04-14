@@ -60,8 +60,8 @@ Business understanding: hiểu vấn đề, lựa ra hướng phân tích và ti
 - Nhấn mạnh nguyên đoạn code: dùng 3 dấu ``` để mở và đóng đoạn code
 - [Tham khảo cú pháp markdown](https://www.markdownguide.org/cheat-sheet/),(https://www.markdowntutorial.com/lesson/1/)
 
-## 6/1/2024: Buổi học 2: Thư viện Numpy
-### Giới thiệu 
+## 6/1/2024: Buổi học 2: Thư viện Numpy 
+### 1. Giới thiệu
 - Numpy (Numerical Python)
 - Thư viện chuyên xử lý dữ liệu số
 - Là nền tảng của nhiều thư viện khác: pandas (series-dựa trên cấu trúc mảng 1 chiều và data frame-dựa trên mảng nhiều chiều), SciPy, Scikit-learn, PyTorch
@@ -81,8 +81,8 @@ Tính toán sử dụng vòng lặp
 
 Tính toán trực tiếp
 
-## 11/1/2024: Buổi học 3: Thư viện Numpy
-### Mảng một chiều
+## 11/1/2024: Buổi học 3: Thư viện Numpy (cont)
+### 2. Mảng một chiều
 
 Mảng một chiều là một cấu trúc dữ liệu trong lập trình máy tính được sử dụng để lưu trữ một tập hợp các phần tử có cùng kiểu dữ liệu. Mỗi phần tử trong mảng được xác định bằng một chỉ số (index) duy nhất. Mảng một chiều còn được gọi là vector.
 
@@ -152,8 +152,8 @@ Bước 2: Gán giá trị mới
 
 array,astype()
 
-## 13/1/2024: Buổi học 4: Thư viện Numpy
-### Mảng nhiều chiều
+## 13/1/2024: Buổi học 4: Thư viện Numpy (cont 2)
+### 3. Mảng nhiều chiều
 1. Tạo mảng nhiều chiều
 
 Cú pháp: numpy.array(object,dtype) 
