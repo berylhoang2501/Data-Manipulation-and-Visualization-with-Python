@@ -288,9 +288,7 @@ cách in thuộc tính thì chỉ cần .thuộc tính
 - .head(n): hiển thị 5 dòng đầu, n mặc định là 5, có thể truyền thông số khác 5 vào
 - .describe(): thông tin thống kê chung
 
-4. Truy xuất
-
-<img width="701" alt="Ảnh màn hình 2024-05-03 lúc 17 13 33" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/7c953d5f-2739-408f-b39d-50df141671da">
+4. Truy xuất dữ liệu
 
 <img width="977" alt="Ảnh chụp Màn hình 2024-02-19 lúc 23 33 01" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/071805f7-d09e-4442-9418-87cd0c57a1f6">
 
@@ -312,11 +310,21 @@ ser.iloc[start:stop:step] -> có quy tắc
 
 - Đối với truy xuất theo điều kiện: sử dụng các biểu thức điều kiện giống trong mảng numpy
 
-5. Phát hiện dữ liệu trùng (duplicate)
+5. Dữ liệu trùng (duplicate)
 
-- ser.duplicated([keep]) # mặc định keep=first
+***Phát hiện trùng***
 
-- ser.drop_duplicates(keep=False,inplace=True) #inplace = True thì thông tin mới được cập nhật trên chuỗi
+- ser.duplicated([keep]) # mặc định keep=first, first là giữ dòng đầu tiên trùng lại
+
+nếu (keep='last') #giữ lại dòng dưới bị trùng, xoá dòng đầu
+
+(keep=False) #thì tất cả các dòng trùng nhau sẽ là True hết
+
+***Xóa dữ liệu trùng***
+
+- ser.drop_duplicates(keep=False,inplace=..) #inplace = True thì thông tin mới được cập nhật trên chuỗi, inplace mặc định sẽ là False
+
+có thể truyền ser.drop_duplicates(keep='last') hoặc không truyền thì sẽ mặc định (keep='first') là giữ dòng đầu, xoá dòng tiếp theo bị trùng
 
 ### 3. DataFrame   
 - Là cấu trúc dữ liệu 2 chiều, được tổ chức theo dòng và cột
