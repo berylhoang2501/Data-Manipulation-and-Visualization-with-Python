@@ -327,9 +327,12 @@ nếu (keep='last') #giữ lại dòng dưới bị trùng, xoá dòng đầu
 có thể truyền ser.drop_duplicates(keep='last') hoặc không truyền thì sẽ mặc định (keep='first') là giữ dòng đầu, xoá dòng tiếp theo bị trùng
 
 ### 3. DataFrame   
+
+<img width="738" alt="Ảnh màn hình 2024-05-03 lúc 18 44 41" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/89ff177f-2fe9-4fdb-8026-52564d19b8f4">
+
 - Là cấu trúc dữ liệu 2 chiều, được tổ chức theo dòng và cột
 
-***1. Phương thức tạo DataFrame***
+1. Phương thức tạo DataFrame
 
 pandas. DataFrame (data (, index] [, columns])
 
@@ -337,17 +340,19 @@ pandas. DataFrame (data (, index] [, columns])
 - index: danh sách nhãn dòng; index = ['tên dòng 1', 'tên dòng 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> n-1
 - columns: danh sách nhãn cột; columns = ['tên cột 1', 'tên cột 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> m-1
 
-***2. Đọc dữ liệu từ tập tin***
+2. Đọc dữ liệu từ tập tin
 <img width="387" alt="Ảnh chụp Màn hình 2024-02-23 lúc 17 51 02" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/5d4dbc71-3d17-4f71-adc4-707d24ec1b73">
 
 - Các tham số thông dụng: 
 <img width="679" alt="Ảnh chụp Màn hình 2024-02-23 lúc 19 14 41" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/c4ad871d-c334-4c0e-bc3d-583d5a0c7bf4">
 
-***3. Thuộc tính***
+3. Thuộc tính
 - dtypes có s: kiểu dữ liệu của các cột 
 <img width="647" alt="Ảnh chụp Màn hình 2024-02-25 lúc 15 21 50" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/cee91406-f63e-4f0e-bce4-9cc94308bb53">
 
-***4. Phương thức***
+4. Phương thức
+
+<img width="946" alt="Ảnh màn hình 2024-05-03 lúc 18 58 55" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/8ea84c3b-f3c5-472d-9da4-2dc8c3830e90">
 
 ***5. Truy xuất dữ liệu***
 
