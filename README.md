@@ -243,7 +243,7 @@ Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
 - Tính trung bình: np.mean
 
 ## 14/1/2024: Buổi học 5: Thư viện Pandas
-### Giới thiệu
+### 1. Giới thiệu
 
 Thư viện Pandas giúp cho chúng ta xử lý dữ liệu, dữ liệu chủ yếu là dữ liệu có cấu trúc: dạng bảng như tập tim Excel, tập tim .csv, tập tin.txt, view từ CSDL 
 
@@ -253,7 +253,7 @@ Tốc độ xử lý cao, dễ thao tác
 
 Có 2 kiểu cấu trúc dữ liệu: Series (dựa trên cấu trúc mảng 1 chiều) và DataFrame (dựa trên cấu trúc mảng 2 chiều
 
-### Series
+### 2. Series
 
 - Là  cấu trúc dữ liệu 1 chiều có gán nhãn. Mỗi phần tử trong Series gồm value (data) và index (label)
 - Đặc điểm:
@@ -314,7 +314,7 @@ ser.iloc[start:stop:step] -> có quy tắc
 
 - ser.drop_duplicates(keep=False,inplace=True) #inplace = True thì thông tin mới được cập nhật trên chuỗi
 
-### DataFrame   
+### 3. DataFrame   
 - Là cấu trúc dữ liệu 2 chiều, được tổ chức theo dòng và cột
 
 ***1. Phương thức tạo DataFrame***
@@ -363,8 +363,8 @@ Không thể truy xuất trực tiếp được như cột
 
 Nguyên tắc phát hiện: phải giống trên tất cả các cột thì mới được gọi là trùng 
 
-## 18/1/2024: Buổi học 6: Thư viện Pandas
-### Làm sạch dữ liệu 
+## 18/1/2024: Buổi học 6: Thư viện Pandas (cont)
+### 4. Làm sạch dữ liệu 
 
 - dữ liệu có vấn đề: bị trùng, không hợp lệ, có giá trị âm cho những trường dữ liệu mang giá trị dương.
 
@@ -391,7 +391,7 @@ df.fillna (method='backfill'): lấy dòng dưới điền lên
 
 - Thực hiện nội suy tuyến tính: df.interpolate() (tính độ dài của 1 khoảng cách rồi sau đó nhân lên)
 
-### Cập nhật và xử lý dữ liệu
+### 5. Cập nhật và xử lý dữ liệu
 
 ***1. Thêm các dòng vào cuối dataframe (gộp 2 dataframe)***
 
@@ -452,7 +452,7 @@ pd.to_datetime(df[<col>], [format])
 - đối với left và right:
  <img width="1070" alt="Ảnh màn hình 2024-03-04 lúc 18 35 09" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/17f576d2-c366-475b-95a7-f082cdefe0f3">
 
-### Thống kê gom nhóm
+### 6. Thống kê gom nhóm
 ***1. Thống kê***
 <img width="1045" alt="Ảnh màn hình 2024-03-05 lúc 00 55 47" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/2338f4c5-4c2f-49a0-877c-b3c6b8026a7d">
 
@@ -466,8 +466,7 @@ pd.to_datetime(df[<col>], [format])
 
 ***3. Thống kê dùng crosstab***
 
-
-
+### 6. Trực quan aóh dữ liệu với Pandas
 
 
 
