@@ -354,7 +354,7 @@ pandas. DataFrame (data (, index] [, columns])
 
 <img width="946" alt="Ảnh màn hình 2024-05-03 lúc 18 58 55" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/8ea84c3b-f3c5-472d-9da4-2dc8c3830e90">
 
-***5. Truy xuất dữ liệu***
+5. Truy xuất dữ liệu
 
 <img width="706" alt="Ảnh chụp Màn hình 2024-02-25 lúc 16 28 03" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/1b616712-62bf-4499-ae82-1d40d128dfea">
 
@@ -376,9 +376,11 @@ Không thể truy xuất trực tiếp được như cột
 
 - Thiết lập set index
 
-***6. Xử lý dữ liệu trùng***
+6. Xử lý dữ liệu trùng
 
 Nguyên tắc phát hiện: phải giống trên tất cả các cột thì mới được gọi là trùng 
+
+***Phát hiện trùng***
 
 ## 18/1/2024: Buổi học 6: Thư viện Pandas (cont)
 ### 4. Làm sạch dữ liệu 
