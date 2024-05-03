@@ -296,6 +296,8 @@ cách in thuộc tính thì chỉ cần .thuộc tính
 
 - Đối với truy xuất 1 phần tử
 
+<img width="1094" alt="Ảnh màn hình 2024-05-03 lúc 17 06 35" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/d30a2d31-60f7-4bd0-a251-4221992f718e">
+
 ser.loc[<lable>] -> tương đương với index tường minh
 
 ser.iloc[<index>] -> tương đương với 2 index ngầm định
