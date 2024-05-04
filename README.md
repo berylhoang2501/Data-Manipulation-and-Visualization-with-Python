@@ -395,7 +395,7 @@ df. duplicated ([subset] [,keep] [, inplace]) #truyền tên cột cần phát h
 
 - thay trên 1 cột: df['tên cột'].replace(giá trị cũ, giá trị mới)
 
-![Uploading Ảnh màn hình 2024-05-04 lúc 10.27.59.png…]()
+<img width="556" alt="Ảnh màn hình 2024-05-04 lúc 10 46 55" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/9b6fff59-cff2-4f0e-a29c-f11def4c9d2b">
 
 - thay thế trên toàn bộ dataframe: df = df.replace(giá trị cũ, giá trị mới)
 
@@ -421,11 +421,15 @@ df.fillna (method='backfill'): lấy dòng dưới điền lên
 
 - Thực hiện nội suy tuyến tính: df.interpolate() (tính độ dài của 1 khoảng cách rồi sau đó nhân lên)
 
+nếu y1 và y3 ​là các giá trị của các điểm dữ liệu và y3 là giá trị nan cần được tính ,  công thức nội suy tuyến tính là:
+
+\[ y_2 = \frac{y_1 + y_3}{2} \]
+
 ### 5. Cập nhật và xử lý dữ liệu
 
-***1. Thêm các dòng vào cuối dataframe (gộp 2 dataframe)***
+1. Thêm các dòng vào cuối dataframe (gộp 2 dataframe): pd. concat ([df_1, df_2])
 
-***2. Sửa giá trị trong dataframe***
+2. Sửa giá trị trong dataframe
 
 Bước 1: truy xuất
 Bước 2: gán giá trị mới
