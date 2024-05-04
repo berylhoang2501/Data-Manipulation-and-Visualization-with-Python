@@ -382,6 +382,8 @@ Nguyên tắc phát hiện: phải giống trên tất cả các cột thì mớ
 
 ***Phát hiện trùng***
 
+df. duplicated ([subset] [,keep] [, inplace]) #truyền tên cột cần phát hiện trùng vào subset
+
 ## 18/1/2024: Buổi học 6: Thư viện Pandas (cont)
 ### 4. Làm sạch dữ liệu 
 
@@ -389,15 +391,22 @@ Nguyên tắc phát hiện: phải giống trên tất cả các cột thì mớ
 
 - xử lý các vấn đề về dữ liệu: loại bỏ dữ liệu trùng, thay thế giá trị, điền bằng dữ liệu phía trên hoặc phía dưới cho những giá trị NaN, loại bỏ các cột, loại bỏ các dòng, nội truy giá trị
   
-***1. Thay thế giá trị***
+1. Thay thế giá trị
 
 - thay trên 1 cột: df['tên cột'].replace(giá trị cũ, giá trị mới)
 
+![Uploading Ảnh màn hình 2024-05-04 lúc 10.27.59.png…]()
+
 - thay thế trên toàn bộ dataframe: df = df.replace(giá trị cũ, giá trị mới)
 
-***2. Xử lý dữ liệu NaN***
+<img width="557" alt="Ảnh màn hình 2024-05-04 lúc 10 28 50" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/ce25682d-493b-4690-af8d-f5acdbd72245">
 
-- Phát hiện NaN
+Cách kiểm tra trong dataframe đó có dữ liệu nào trùng không: emp_df.duplicated().sum()
+
+2. Xử lý dữ liệu NaN
+
+- Phát hiện NaN: df.info() để hiển thị thông tin tổng quan về dữ liệu, sau đó df.isnull().sum()
+
 - Điền bằng dữ liệu phía trên hoặc phía dưới
 
 df.fillna (method='ffill'): lấy dòng trên điền xuống
@@ -406,7 +415,9 @@ df.fillna (method='backfill'): lấy dòng dưới điền lên
 
 - Điền bằng dữ liệu khác
 
-- Xóa bỏ dòng/cột dữ liệu có chứa nan: df.dropna(axis=0) (mặc định axis = 0 theo trục index của dòng)
+<img width="715" alt="Ảnh màn hình 2024-05-04 lúc 10 39 42" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/2c194693-27ce-4506-a73e-91b7664e8024">
+
+- Xóa bỏ dòng/cột dữ liệu có chứa nan: df.dropna(axis=0) (mặc định axis = 0 theo trục index của dòng, axis = 1 là xoá )
 
 - Thực hiện nội suy tuyến tính: df.interpolate() (tính độ dài của 1 khoảng cách rồi sau đó nhân lên)
 
