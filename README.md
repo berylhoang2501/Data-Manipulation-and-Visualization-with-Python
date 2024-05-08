@@ -436,17 +436,25 @@ Bước 2: gán giá trị mới
 
 loc là truy xuất theo điều kiện, còn iloc là truy xuất nhanh theo dạng start stop step 
 
-***3. Xoá dòng và cột trong dataframe***
+3. Xoá dòng trong dataframe
 
-xoá theo lable (tường minh)
+xoá theo lable (tường minh) df.drop(list_row_label)
 
-xoá theo index (ngầm định)
+xoá theo index (ngầm định) df.drop(df.index(list_row_ index])
 
-***4. Chuyển đỗi kiểu dữ liệu***
+4. Xoá cột trong dataframe
+
+df.drop(list_col label, axis = 1, inplace = True)
+
+5. Chuyển đỗi kiểu dữ liệu
 
 df['tên cột'].astype(kiểu dữ liệu)
 
-***5. Đổi tên cột trong dataframe***
+<img width="671" alt="Ảnh màn hình 2024-05-08 lúc 08 44 47" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/81470bfe-2186-47a9-8c67-869404866782">
+
+6. Đổi tên cột trong dataframe
+
+df. rename (columns={' ':' '}, inplace = True)
 ***6. Xử lý tạo cột mới trong dataframe***
 ***7. Phương thức thao tác trên chuỗi***
 - Tìm chuỗi bắt đầu bằng chuỗi con : str.startswith
