@@ -242,6 +242,17 @@ Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
 - Làm tròn 2 chữ số thập phân: np.round
 - Tính trung bình: np.mean
 
+12. Một số phương thức trong numpy
+
+- duyệt các phần tử: thay vì sử dụng n vòng lặp for, có thể sử dụng np.nditer(arr)
+
+import numpy as np
+
+arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+
+for x in np.nditer(arr):
+    print(x)
+  
 ## 14/1/2024: Buổi học 5: Thư viện Pandas
 ### 1. Giới thiệu
 
