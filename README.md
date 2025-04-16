@@ -105,6 +105,9 @@ tenmang.thuoctinh
 
 tenmang.phuongthuc()
 
+<img width="949" alt="Ảnh màn hình 2025-04-17 lúc 01 03 36" src="https://github.com/user-attachments/assets/b26d8913-8028-4628-8d33-7dcb2aab7c0a" />
+
+
 - Một số thuộc tính khác:
 <img width="927" alt="Ảnh chụp Màn hình 2024-01-13 lúc 00 16 19" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/644b4176-d99f-4491-9819-fd57689615e8">
 
@@ -112,13 +115,19 @@ tenmang.phuongthuc()
 3. Tạo mảng bằng các hàm tiện ích
   <img width="707" alt="Ảnh chụp Màn hình 2024-01-13 lúc 01 04 09" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/cd7cfe5e-2c55-4b66-a856-66ba3e08873e">
 
+np.random.seed() thường được gọi trước khi sử dụng các hàm tạo số ngẫu nhiên (như np.random.randint(), np.random.rand(), v.v.) để đảm bảo kết quả có thể lặp lại.
+
 *Hàm sắp xếp phần tử*
 - np.arange([start,]stop[,step,]
 - np.linspace(start,stop,num,endpoint)
 
+Đối với np.linspace thì khoảng cách giữa các phần tử được tính tự động dựa trên num.
+Ví dụ: np.linspace(0, 10, 5) tạo mảng [0.0, 2.5, 5.0, 7.5, 10.0].
+
 nếu endpoint = True => bins = (stop - start)/(num - 1) không lấy stop
 
 nếu endpoint = False => bins = (stop - start)/num lấy stop
+
 
 * Tạo mảng bằng cách đọc vào tập tin txt
 
@@ -245,13 +254,19 @@ Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
 12. Một số phương thức trong numpy
 
 - duyệt các phần tử: thay vì sử dụng n vòng lặp for, có thể sử dụng np.nditer(arr)
-
+'''
 import numpy as np
 
 arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
 
 for x in np.nditer(arr):
     print(x)
+
+'''
+
+13. Đọc tập tin trong numpy
+
+- np.genfromtxt('file_path',delimiter=',')
   
 ## 14/1/2024: Buổi học 5: Thư viện Pandas
 ### 1. Giới thiệu
