@@ -264,6 +264,20 @@ for x in np.nditer(arr):
 
 '''
 
+- ndenumerate() trả về 2 giá trị index, element
+'''
+import numpy as np
+
+arr = np.array([1, 2, 3])
+
+for idx, x in np.ndenumerate(arr):
+  print(idx, x)
+'''
+
+# (0,) 1
+# (1,) 2
+# (2,) 3
+
 13. Đọc tập tin trong numpy
 
 - np.genfromtxt('file_path',delimiter=',')
