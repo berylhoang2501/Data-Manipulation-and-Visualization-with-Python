@@ -284,7 +284,6 @@ Kết quả trả về là:
 (2,) 3
 
 ```
-
 import numpy as np
 
 arr1 = np.array([1, 2, 3])
@@ -304,7 +303,14 @@ Kết quả trả về là:
  
 [[1 2 3]
  [4 5 6]] ->.vstack
- 
+
+ [[[1 4]
+  [2 5]
+  [3 6]]] ->.dstack
+
+
+- np.array_split(arr, 3) để chia mảng, trong đó arr là mảng cần tách, 3 là số mảng nhỏ cần tách ra
+
 13. Đọc tập tin trong numpy
 
 - np.genfromtxt('file_path',delimiter=',')
