@@ -254,6 +254,7 @@ Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
 12. Một số phương thức trong numpy
 
 - duyệt các phần tử: thay vì sử dụng n vòng lặp for, có thể sử dụng np.nditer(arr)
+
 '''
 import numpy as np
 
@@ -265,6 +266,7 @@ for x in np.nditer(arr):
 '''
 
 - ndenumerate() trả về 2 giá trị index, element
+
 '''
 import numpy as np
 
@@ -273,11 +275,33 @@ arr = np.array([1, 2, 3])
 for idx, x in np.ndenumerate(arr):
   print(idx, x)
 '''
-
 # (0,) 1
 # (1,) 2
 # (2,) 3
 
+import numpy as np
+
+arr1 = np.array([1, 2, 3])
+
+arr2 = np.array([4, 5, 6])
+
+arr = np.vstack((arr1, arr2))
+
+print(arr)
+
+
+#[1 2 3 4 5 6] #.concatenate
+#[1 2 3 4 5 6] #.hstack
+
+"""
+
+[[1 2 3]
+ [4 5 6]] ->.stack
+ 
+[[1 2 3]
+ [4 5 6]] ->.vstack
+ 
+"""
 13. Đọc tập tin trong numpy
 
 - np.genfromtxt('file_path',delimiter=',')
