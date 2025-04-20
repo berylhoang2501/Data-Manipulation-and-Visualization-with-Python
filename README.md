@@ -255,7 +255,7 @@ Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
 
 - duyệt các phần tử: thay vì sử dụng n vòng lặp for, có thể sử dụng np.nditer(arr)
 
-'''
+```
 import numpy as np
 
 arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
@@ -263,18 +263,18 @@ arr = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
 for x in np.nditer(arr):
     print(x)
 
-'''
+```
 
 - ndenumerate() trả về 2 giá trị index, element
 
-'''
+```
 import numpy as np
 
 arr = np.array([1, 2, 3])
 
 for idx, x in np.ndenumerate(arr):
   print(idx, x)
-'''
+```
 # (0,) 1
 # (1,) 2
 # (2,) 3
@@ -293,7 +293,7 @@ print(arr)
 #[1 2 3 4 5 6] #.concatenate
 #[1 2 3 4 5 6] #.hstack
 
-"""
+```
 
 [[1 2 3]
  [4 5 6]] ->.stack
@@ -301,7 +301,7 @@ print(arr)
 [[1 2 3]
  [4 5 6]] ->.vstack
  
-"""
+```
 13. Đọc tập tin trong numpy
 
 - np.genfromtxt('file_path',delimiter=',')
