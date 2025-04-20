@@ -275,9 +275,15 @@ arr = np.array([1, 2, 3])
 for idx, x in np.ndenumerate(arr):
   print(idx, x)
 ```
-# (0,) 1
-# (1,) 2
-# (2,) 3
+Kết quả trả về là:
+
+(0,) 1
+
+(1,) 2
+
+(2,) 3
+
+```
 
 import numpy as np
 
@@ -288,12 +294,10 @@ arr2 = np.array([4, 5, 6])
 arr = np.vstack((arr1, arr2))
 
 print(arr)
-
-
-#[1 2 3 4 5 6] #.concatenate
-#[1 2 3 4 5 6] #.hstack
-
 ```
+Kết quả trả về là:
+[1 2 3 4 5 6] #.concatenate
+[1 2 3 4 5 6] #.hstack
 
 [[1 2 3]
  [4 5 6]] ->.stack
@@ -301,7 +305,6 @@ print(arr)
 [[1 2 3]
  [4 5 6]] ->.vstack
  
-```
 13. Đọc tập tin trong numpy
 
 - np.genfromtxt('file_path',delimiter=',')
