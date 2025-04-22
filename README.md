@@ -88,7 +88,7 @@ Mảng một chiều là một cấu trúc dữ liệu trong lập trình máy t
 
 Mảng một chiều thường dùng để đọc file txt 
 
-1. Tạo mảng một chiều
+#### 1. Tạo mảng một chiều
 - Cú pháp tạo mảng: numpy.array(object, dtype)
 
 object là đối tượng dạng danh sách (list, tuple, array,..). 
@@ -97,7 +97,7 @@ dtype: kiểu dữ liệu của các phần tử trong mảng (sẽ theo ptu có
 
 Nếu không có tham số dtype thì sẽ theo kiểu dữ liệu lớn nhất của object.
 
-2. Thuộc tính của mảng
+#### 2. Thuộc tính của mảng
 - Đối tượng mảng có 2 thành phần : thuộc tính , phương thức(hàm)
 - Truy xuất:
 
@@ -112,7 +112,8 @@ tenmang.phuongthuc()
 <img width="927" alt="Ảnh chụp Màn hình 2024-01-13 lúc 00 16 19" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/644b4176-d99f-4491-9819-fd57689615e8">
 
 - Note: sử dụng dtype khi muốn lấy kiểu dữ liệu khác với kiểu dữ liệu của object, nếu không cần thì khỏi truyền dtype
-3. Tạo mảng bằng các hàm tiện ích
+
+#### 3. Tạo mảng bằng các hàm tiện ích
   <img width="707" alt="Ảnh chụp Màn hình 2024-01-13 lúc 01 04 09" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/cd7cfe5e-2c55-4b66-a856-66ba3e08873e">
 
 np.random.seed() thường được gọi trước khi sử dụng các hàm tạo số ngẫu nhiên (như np.random.randint(), np.random.rand(), v.v.) để đảm bảo kết quả có thể lặp lại.
@@ -131,11 +132,11 @@ nếu endpoint = False => bins = (stop - start)/num lấy stop
 
 * Tạo mảng bằng cách đọc vào tập tin txt
 
-4. Truy xuất phần tử trong mảng
+#### 4. Truy xuất phần tử trong mảng
 - Đối với truy xuất thì luôn luôn dùng ngoặc vuông
 <img width="631" alt="Ảnh chụp Màn hình 2024-01-11 lúc 18 56 46" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/463c968c-0134-45cd-900f-972a2db570a8">
 
-5. Cập nhật dữ liệu mảng (thêm, xoá, sửa)
+#### 5. Cập nhật dữ liệu mảng (thêm, xoá, sửa)
 - Thêm phần tử vào cuối mảng: np.concatenate[array,[value]])
 - Chèn phần tử vào mảng 1 chiều: np.insert(arrld,position[s],value[s]) (lần lượt là #mảng cần chèn, vị trí index, giá trị cần chèn)
 - Xoá phần tử: np.delete(arrld,position[s]) #position hiểu là index
@@ -145,25 +146,25 @@ Bước 1: Truy xuất
 
 Bước 2: Gán giá trị mới 
 
-6. Các phép toán số học
+#### 6. Các phép toán số học
 
-7. Các hàm toán học
+#### 7. Các hàm toán học
 ![Ảnh chụp Màn hình 2024-01-19 lúc 00 53 11](https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/0700fe39-38b5-4e4c-8dd5-b306f4d91160)
 
-8. Các hàm thống kê
+#### 8. Các hàm thống kê
 <img width="676" alt="Ảnh chụp Màn hình 2024-01-19 lúc 00 57 57" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/84a94577-c3d1-4621-aacc-70d08500e651">
 
-9. Sắp xếp mảng
+#### 9. Sắp xếp mảng
 - Sắp xếp tăng dần: np.sort(arr1)
 - Sắp xếp giảm dần: np.sort(arr1)[::-1]
 
-10. Chuyển đổi kiểu dữ liệu
+#### 10. Chuyển đổi kiểu dữ liệu
 
 array,astype()
 
 ## 13/1/2024: Buổi học 4: Thư viện Numpy (cont 2)
 ### 3. Mảng nhiều chiều
-1. Tạo mảng nhiều chiều
+#### 1. Tạo mảng nhiều chiều
 
 Cú pháp: numpy.array(object,dtype) 
 
@@ -175,19 +176,19 @@ Nếu có 2 cặp dấu ngoặc vuông ở đầu và 2 cặp dấu ngoặc vuô
 
 4 list con tương ứng với 4 dòng, mỗi 1 list con có 5 phần tử, 5 phần tử trong list tương ứng với 5 cột 
 
-2. Thuộc tính của mảng
+#### 2. Thuộc tính của mảng
 <img width="678" alt="Ảnh chụp Màn hình 2024-01-26 lúc 14 52 54" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/0fd4a6d1-f065-41ac-9acc-5ff5afa5be3b">
 
-3. Tạo mảng bằng các hàm tiện ích
+#### 3. Tạo mảng bằng các hàm tiện ích
 
 lúc truyền dữ liệu phải truyền theo dạng shape(a,b) đầy đủ các thông số chứ không thể ghi 1 thông số như mảng 1 chiều 
 
 <img width="671" alt="Ảnh chụp Màn hình 2024-01-26 lúc 15 01 12" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/972940fe-c3d6-4a98-a9c1-ee2577fa90da">
 
-4. Truy xuất phần tử trong mảng
+#### 4. Truy xuất phần tử trong mảng
 <img width="685" alt="Ảnh chụp Màn hình 2024-01-30 lúc 00 40 08" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/bf5a659d-c8e7-40e2-9d1a-eceac2a6c6cc">
 
-5. Cập nhật dữ liệu mảng (thêm, xoá, sửa)
+#### 5. Cập nhật dữ liệu mảng (thêm, xoá, sửa)
 
 - Thêm: đối với mảng 2 chiều thì không thể thêm vào chỉ 1 phần tử vì sẽ làm phá vỡ cấu trúc của mảng 2 chiều. Chỉ được thêm nguyên dòng hoặc nguyên cột
 
@@ -208,18 +209,18 @@ Bước 1: Truy xuất
 
 Bước 2: Gán giá trị mới (truy xuất ra bao nhiêu số thì gán đủ lại bấy nhiêu số)
 
-6. Thực hiện phép toán số học từng phần trên mảng
+#### 6. Thực hiện phép toán số học từng phần trên mảng
 
 ![Ảnh chụp Màn hình 2024-02-10 lúc 17 57 40](https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/d3791d2d-edc5-41ec-8ca5-72c93a7e49f1)
 
-7. Các hàm thống kê cơ bản
+#### 7. Các hàm thống kê cơ bản
 
 <img width="970" alt="Ảnh chụp Màn hình 2024-02-10 lúc 17 59 41" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/c8be4b91-978f-4995-a276-187017782d33">
 
 axis=0: thống kê các dòng trong cột
 axis=1: thống kê các cột trong dòng
 
-8. Hệ số tương quan Peason: np.corrcoef (correlation coefficients)
+#### 8. Hệ số tương quan Peason: np.corrcoef (correlation coefficients)
 - strong negative correlation (<0.7): Nếu một biến tăng, thì biến còn lại giảm, và ngược lại.
 
 <img width="347" alt="Ảnh chụp Màn hình 2024-02-10 lúc 18 57 31" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/1b9690ed-f6f4-49f5-9355-4197cb5834b0">
@@ -232,17 +233,21 @@ axis=1: thống kê các cột trong dòng
 
 <img width="292" alt="Ảnh chụp Màn hình 2024-02-13 lúc 00 18 21" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/867d2fc4-4017-4ff8-afa9-edbee594a9b5">
 
-9. Sắp xếp mảng:
+- Nếu hai biến có hệ số tương quan rất cao (𝑟 ≈ 1 hoặc 𝑟 ≈ −1), chúng có thể chứa thông tin gần giống nhau, gây ra hiện tượng đa cộng tuyến (multicollinearity) trong các mô hình như hồi quy tuyến tính.
+
+**Ví dụ:** Trong dữ liệu nhà ở, nếu "diện tích nhà" và "số phòng" có 𝑟 = 0.95, bạn có thể loại bỏ một biến để giảm độ phức tạp mô hình.
+
+#### 9. Sắp xếp mảng:
 
 np.sort(arr, axis = 0 nếu theo cột và = 1 nếu theo dòng)
 
-10. Biến đổi mảng (reshape): thay đổi kích thước mảng, chiều của mảng (thay đổi số dòng, số cột)
+#### 10. Biến đổi mảng (reshape): thay đổi kích thước mảng, chiều của mảng (thay đổi số dòng, số cột)
 
 Biến đổi mảng 2 chiều thành mảng 1 chiều: arr2.reshape(-1)
 
 Chuyển vị: np.transpose() hoặc arr.T (chuyển dòng thành cột, cột thành dòng)
 
-11. Kết hợp mảng
+#### 11. Kết hợp mảng
 
 Tìm phần tử chung giữa 2 mảng: np.intersectld(_,_)
 Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
@@ -251,7 +256,7 @@ Phần tử chỉ xuất hiện ở 1 mảng: np.setdiffld(_,_)
 - Làm tròn 2 chữ số thập phân: np.round
 - Tính trung bình: np.mean
 
-12. Một số phương thức trong numpy
+#### 12. Một số phương thức trong numpy
 
 - duyệt các phần tử: thay vì sử dụng n vòng lặp for, có thể sử dụng np.nditer(arr)
 
@@ -311,7 +316,7 @@ Kết quả trả về là:
 
 - np.array_split(arr, 3) để chia mảng, trong đó arr là mảng cần tách, 3 là số mảng nhỏ cần tách ra
 
-13. Đọc tập tin trong numpy
+#### 13. Đọc tập tin trong numpy
 
 - np.genfromtxt('file_path',delimiter=',')
   
