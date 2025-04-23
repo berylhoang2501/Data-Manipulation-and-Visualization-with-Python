@@ -136,7 +136,7 @@ nếu endpoint = False => bins = (stop - start)/num lấy stop
 <img width="631" alt="Ảnh chụp Màn hình 2024-01-11 lúc 18 56 46" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/463c968c-0134-45cd-900f-972a2db570a8">
 
 5. Cập nhật dữ liệu mảng (thêm, xoá, sửa)
-- Thêm phần tử vào cuối mảng: np.concatenate[array,[value]])
+- Thêm phần tử vào cuối mảng: np.concatenate[array,[value]]). Nếu value.T hoặc .transpose() là chuyển vị (ví dụ đang là dòng nằm ngang thì chuyển thành cột nằm dọc)
 - Chèn phần tử vào mảng 1 chiều: np.insert(arrld,position[s],value[s]) (lần lượt là #mảng cần chèn, vị trí index, giá trị cần chèn)
 - Xoá phần tử: np.delete(arrld,position[s]) #position hiểu là index
 - Sửa giá trị phần tử trong mảng
