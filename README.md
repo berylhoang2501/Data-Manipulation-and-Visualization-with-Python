@@ -361,6 +361,12 @@ baseball = np.concatenate([height_m.reshape(-1,1), weight_kg.reshape(-1,1)], axi
 baseball
 ```
 
+- Tìm phần tử trong mảng, trả về index
+
+np.where, ví dụ tìm các phần tử == 4 trong 1 array thì sẽ trả về tuple index vị trí của các phần tử thoả mãn điều kiện trong mảng. ví dụ (array([3, 5, 6],)
+
+np.searchsorted(), chúng ta còn 1 cách khác để tìm các phần tử trong mảng đó là sử dụng method này. Phương pháp này là binary search, chỉ sử dụng trên mảng đã đuọc sắp xếp theo thứ tự tăng dần hoặc giảm dần. Kết quả trả về là giá trị độc lập hoặc 1 list. và các giá trị [...,...,...] được xử lý độc lập (không phải chèn lần lượt hay đồng thời).
+
 #### 13. Đọc tập tin trong numpy
 
 - np.genfromtxt('file_path',delimiter=',')
