@@ -416,6 +416,15 @@ cách in thuộc tính thì chỉ cần .thuộc tính
 - .info(): hiển thị thông tin sơ bộ của dữ liệu
 - .head(n): hiển thị 5 dòng đầu, n mặc định là 5, có thể truyền thông số khác 5 vào
 - .describe(): thông tin thống kê chung
+nếu truyền vào .describe(include='object') thì sẽ tạo thống kê mô tả cho cột kiểu object (chuỗi) trong DataFrame. Chỉ hiển thị 4 thông tin: count, unique, top, freq, vì đây là các thống kê phù hợp nhất cho dữ liệu chuỗi.
+
+count cho biết có bao nhiêu hàng trong cột chứa giá trị hợp lệ, nếu count nhỏ hơn tổng số hàng trong DataFrame, điều này chỉ ra rằng có giá trị thiếu trong cột.
+
+unique là số lượng giá trị duy nhất (distinct values). Ví dụ: Nếu một giá trị xuất hiện nhiều lần, nó chỉ được tính là một giá trị duy nhất.
+
+top là giá trị xuất hiện nhiều nhất (mode) trong cột.
+
+freq cho biết giá trị top xuất hiện bao nhiêu lần trong cột. Đây là số lần lặp lại của giá trị phổ biến nhất.
 
 #### 4. Truy xuất dữ liệu
 
