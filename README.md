@@ -380,7 +380,15 @@ Dùng để: khám phá, làm sạch, phân tích và trực quan hoá
 
 Tốc độ xử lý cao, dễ thao tác
 
-Có 2 kiểu cấu trúc dữ liệu: Series (dựa trên cấu trúc mảng 1 chiều) và DataFrame (dựa trên cấu trúc mảng 2 chiều
+Có 2 kiểu cấu trúc dữ liệu: Series (dựa trên cấu trúc mảng 1 chiều) và DataFrame (dựa trên cấu trúc mảng 2 chiều)
+
+- Để đọc tập tin trong pandas, dùng pd.read_csv. Nó được thiết kế để đọc dữ liệu từ file CSV và trả về một Pandas DataFrame (hoặc trong một số trường hợp, một Pandas Series).
+
+delimiter=',': Chỉ định dấu phân cách là dấu phẩy.
+
+skiprows=2, bỏ qua 2 dòng đầu.
+
+đọc thêm tại https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
 
 ### 2. Series
 
