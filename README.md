@@ -492,6 +492,8 @@ pandas. DataFrame (data (, index] [, columns])
 - Các tham số thông dụng: 
 <img width="679" alt="Ảnh chụp Màn hình 2024-02-23 lúc 19 14 41" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/c4ad871d-c334-4c0e-bc3d-583d5a0c7bf4">
 
+- Nếu dùng df.to_string() thì sẽ  print the entire DataFrame. Nếu không dùng thì chỉ trả về 5 dòng đầu và 5 dòng cuối của data frame đó. 
+
 3. Thuộc tính
 - dtypes có s: kiểu dữ liệu của các cột 
 <img width="647" alt="Ảnh chụp Màn hình 2024-02-25 lúc 15 21 50" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/cee91406-f63e-4f0e-bce4-9cc94308bb53">
@@ -516,11 +518,22 @@ Có quy tắc thì dùng theo dạng start:stop:step, không có quy tắc thì 
 
 - Truy xuất dữ liệu theo dòng
 
-Không thể truy xuất trực tiếp được như cột 
++ Không thể truy xuất trực tiếp được như cột 
 
 - Truy xuất theo điều kiện: chỉ có loc là lọc theo điều kiện còn iloc chỉ lọc nhanh được chứ không thể lọc theo điều kiện 
 
-- Thiết lập set index
+- Trong Pandas, phương thức .loc được sử dụng để truy xuất dữ liệu dựa trên nhãn (label-based indexing). Cú pháp tổng quát của .loc và .ilo là: 
+  
+```
+
+df.loc[row_labels, column_labels]
+
+df.iloc[row_index, column_index]
+
+```
+- Ví dụ emp_df.loc[[1,4], ['FIRST_NAME', 'LAST_NAME', 'SALARY']]. Nếu row_labels là một danh sách ([1,4]), Pandas hiểu rằng bạn muốn chọn các hàng cụ thể có nhãn 1 và 4. Dấu ngoặc vuông [] trong [1,4] cho biết đây là danh sách các nhãn, không phải slice.
+
+<img width="787" alt="Ảnh màn hình 2025-04-28 lúc 14 44 03" src="https://github.com/user-attachments/assets/78605d95-a108-4b1f-b2e0-ffb0b90b19fc" />
 
 6. Xử lý dữ liệu trùng
 
