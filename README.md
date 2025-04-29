@@ -486,6 +486,8 @@ pandas. DataFrame (data (, index] [, columns])
 - index: danh sách nhãn dòng; index = ['tên dòng 1', 'tên dòng 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> n-1
 - columns: danh sách nhãn cột; columns = ['tên cột 1', 'tên cột 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> m-1
 
+- Có thể đọc thêm về các phương thức tạo DataFrame từ list, series, dict, read excel, csv tại đây https://colab.research.google.com/drive/1U9C-X2NC_FJVcNxpx9yIuIVWzjz5xTyK#scrollTo=emotional-palestinian
+
 #### 2. Đọc dữ liệu từ tập tin
 <img width="387" alt="Ảnh chụp Màn hình 2024-02-23 lúc 17 51 02" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/5d4dbc71-3d17-4f71-adc4-707d24ec1b73">
 
