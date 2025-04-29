@@ -478,7 +478,7 @@ có thể truyền ser.drop_duplicates(keep='last') hoặc không truyền thì 
 
 - Là cấu trúc dữ liệu 2 chiều, được tổ chức theo dòng và cột
 
-1. Phương thức tạo DataFrame
+#### 1. Phương thức tạo DataFrame
 
 pandas. DataFrame (data (, index] [, columns])
 
@@ -486,7 +486,7 @@ pandas. DataFrame (data (, index] [, columns])
 - index: danh sách nhãn dòng; index = ['tên dòng 1', 'tên dòng 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> n-1
 - columns: danh sách nhãn cột; columns = ['tên cột 1', 'tên cột 2',...], nếu không truyền dữ liệu vào thì sẽ mặc định từ 0 -> m-1
 
-2. Đọc dữ liệu từ tập tin
+#### 2. Đọc dữ liệu từ tập tin
 <img width="387" alt="Ảnh chụp Màn hình 2024-02-23 lúc 17 51 02" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/5d4dbc71-3d17-4f71-adc4-707d24ec1b73">
 
 - Các tham số thông dụng: 
@@ -494,15 +494,15 @@ pandas. DataFrame (data (, index] [, columns])
 
 - Nếu dùng df.to_string() thì sẽ  print the entire DataFrame. Nếu không dùng thì chỉ trả về 5 dòng đầu và 5 dòng cuối của data frame đó. 
 
-3. Thuộc tính
+#### 3. Thuộc tính
 - dtypes có s: kiểu dữ liệu của các cột 
 <img width="647" alt="Ảnh chụp Màn hình 2024-02-25 lúc 15 21 50" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/cee91406-f63e-4f0e-bce4-9cc94308bb53">
 
-4. Phương thức
+#### 4. Phương thức
 
 <img width="946" alt="Ảnh màn hình 2024-05-03 lúc 18 58 55" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/8ea84c3b-f3c5-472d-9da4-2dc8c3830e90">
 
-5. Truy xuất dữ liệu
+#### 5. Truy xuất dữ liệu
 
 <img width="706" alt="Ảnh chụp Màn hình 2024-02-25 lúc 16 28 03" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/1b616712-62bf-4499-ae82-1d40d128dfea">
 
@@ -535,13 +535,45 @@ df.iloc[row_index, column_index]
 
 <img width="787" alt="Ảnh màn hình 2025-04-28 lúc 14 44 03" src="https://github.com/user-attachments/assets/78605d95-a108-4b1f-b2e0-ffb0b90b19fc" />
 
-6. Xử lý dữ liệu trùng
+#### 6. Xử lý dữ liệu trùng
 
 Nguyên tắc phát hiện: phải giống trên tất cả các cột thì mới được gọi là trùng 
 
-***Phát hiện trùng***
+***Phát hiện trùng bằng .duplicated***
 
-df. duplicated ([subset] [,keep] [, inplace]) #truyền tên cột cần phát hiện trùng vào subset
+Trước khi xoá thì sử dụng .duplicated().sum() để kiểm tra số lượng và vị trí các hàng trùng lặp trước khi xóa. 
+
+- df.duplicated ([subset] [,keep] [, inplace]) #truyền tên cột cần phát hiện trùng vào subset
+
+Mặc định: subset=None (kiểm tra toàn bộ cột).
+
+Giá trị keep: 
+
+'first': Giữ hàng đầu tiên, đánh dấu các hàng trùng lặp sau là True.
+'last': Giữ hàng cuối cùng, đánh dấu các hàng trùng lặp trước là True.
+'False': Đánh dấu tất cả các hàng trùng lặp là True (bao gồm cả hàng đầu tiên).
+
+- Lọc các hàng trùng lặp (in ra tất cả các hàng đang bị trùng):
+  
+```
+duplicated_rows = emp_df[emp_df.duplicated(keep=False)]
+print(duplicated_rows)
+```
+
+***Xoá trùng bằng .drop_duplicates()***
+
+```
+DataFrame.drop_duplicates(subset=None, keep='first', inplace=False, ignore_index=False)
+```
+
+inplace =  True: Sửa đổi DataFrame gốc
+
+inplace =  False: Trả về DataFrame mới (mặc định)
+
+ignore_index = True: Đặt lại index thành số tuần tự (0, 1, 2, ...).
+
+ignore_index = False: Giữ index của các hàng được giữ lại.
+
 
 ## 18/1/2024: Buổi học 6: Thư viện Pandas (cont)
 ### 4. Làm sạch dữ liệu 
@@ -568,9 +600,9 @@ Cách kiểm tra trong dataframe đó có dữ liệu nào trùng không: emp_df
 
 - Điền bằng dữ liệu phía trên hoặc phía dưới
 
-df.fillna (method='ffill'): lấy dòng trên điền xuống
+df.fillna(method='ffill'): lấy dòng trên điền xuống
 
-df.fillna (method='backfill'): lấy dòng dưới điền lên
+df.fillna(method='backfill'): lấy dòng dưới điền lên
 
 - Điền bằng dữ liệu khác
 
