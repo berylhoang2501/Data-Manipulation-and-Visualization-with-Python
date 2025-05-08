@@ -701,10 +701,36 @@ pd.to_datetime(df[<col>], [format])
 
 ***3. Thống kê dùng crosstab***
 
-### 6. Trực quan aóh dữ liệu với Pandas
+### 6. Trực quan hoá dữ liệu với Pandas
 
 
+## /1/2024: Buổi học : 
 
+### Matplotlib Plotting
+
+```
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints = np.array([1, 8])
+ypoints = np.array([3, 10])
+
+plt.plot(xpoints, ypoints, 'o')
+plt.show()
+
+```
+
+'o' chỉ định rằng dữ liệu sẽ được vẽ dưới dạng các điểm tròn (circle markers).
+Một số định dạng khác có thể dùng:
+'-' (dấu gạch nối): Vẽ đường thẳng (mặc định, như trong biểu đồ trước đó).
+'s': Vẽ điểm dưới dạng hình vuông (square).
+'*': Vẽ điểm dưới dạng hình sao (star).
+'--': Vẽ đường nét đứt.
+
+**Lưu ý: **
+
+- Không có giá trị mặc định cho trục y. phải cung cấp giá trị cho trục y (ở đây là ypoints). Nếu không cung cấp ypoints, plt.plot() sẽ không thể vẽ biểu đồ và sẽ báo lỗi. Tuy nhiên, có giá trị mặc định cho trục x, nếu không cung cấp xpoints, matplotlib sẽ tự động tạo một mảng cho trục x, bắt đầu từ 0 và tăng dần với bước nhảy 1, có độ dài bằng với ypoints.
 
 
 
