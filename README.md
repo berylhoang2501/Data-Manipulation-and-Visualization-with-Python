@@ -716,7 +716,7 @@ import numpy as np
 xpoints = np.array([1, 8])
 ypoints = np.array([3, 10])
 
-plt.plot(xpoints, ypoints, 'o')
+plt.plot(xpoints, ypoints, 'o:r', ms = 20, mec = 'b',  mfc = 'r')
 plt.show()
 
 ```
@@ -733,9 +733,18 @@ plt.show()
 
 '--': Vẽ đường nét đứt.
 
+'o:r' là marker|line|color, ':' có nghĩa là đường nét đứt (dotted line).
+
+https://www.w3schools.com/python/matplotlib_markers.asp
+
 **Lưu ý:**
 
 - Không có giá trị mặc định cho trục y. phải cung cấp giá trị cho trục y (ở đây là ypoints). Nếu không cung cấp ypoints, plt.plot() sẽ không thể vẽ biểu đồ và sẽ báo lỗi. Tuy nhiên, có giá trị mặc định cho trục x, nếu không cung cấp xpoints, matplotlib sẽ tự động tạo một mảng cho trục x, bắt đầu từ 0 và tăng dần với bước nhảy 1, có độ dài bằng với ypoints.
 
+- You can use the keyword argument **markersize** or the shorter version, ms to set the size of the markers
+
+- You can use the keyword argument **markeredgecolor** or the shorter mec to set the color of the edge of the markers
+
+- You can use the keyword argument **markerfacecolor** or the shorter mfc to set the color inside the edge of the markers:
 
 
