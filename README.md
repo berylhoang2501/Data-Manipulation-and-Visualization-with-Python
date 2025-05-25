@@ -614,11 +614,9 @@ df.fillna(method='backfill'): lấy dòng dưới điền lên
 
 - Thực hiện nội suy tuyến tính: df.interpolate() (tính độ dài của 1 khoảng cách rồi sau đó nhân lên)
 
-Giả sử có hai điểm đã biết \((x_1, y_1)\) và \((x_2, y_2)\), giá trị \(y\) tại điểm \(x\) (với \(x_1 \leq x \leq x_2\)) được tính như sau:
+Giả sử có hai điểm đã biết (x1, y1) và (x2, y2), giá trị y tại điểm x (với x1 <= x <= x2) được tính như sau:
 
-\[
-y = y_1 + (y_2 - y_1) \cdot \frac{x - x_1}{x_2 - x_1}
-\]
+y = y1 + (y2 - y1) * (x - x1) / (x2 - x1)
 
 - Giải thích:
 
