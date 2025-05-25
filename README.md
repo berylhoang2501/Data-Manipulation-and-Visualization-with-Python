@@ -614,21 +614,23 @@ df.fillna(method='backfill'): lấy dòng dưới điền lên
 
 - Thực hiện nội suy tuyến tính: df.interpolate() (tính độ dài của 1 khoảng cách rồi sau đó nhân lên)
 
-Giả sử có hai điểm đã biết ((x_1, y_1)) và ((x_2, y_2)), giá trị (y) tại điểm (x) (với (x_1 \leq x \leq x_2)) được tính như sau:
+Giả sử có hai điểm đã biết \((x_1, y_1)\) và \((x_2, y_2)\), giá trị \(y\) tại điểm \(x\) (với \(x_1 \leq x \leq x_2\)) được tính như sau:
 
-[ y = y_1 + (y_2 - y_1) \cdot \frac{x - x_1}{x_2 - x_1} ]
+\[
+y = y_1 + (y_2 - y_1) \cdot \frac{x - x_1}{x_2 - x_1}
+\]
+
+- Giải thích:
+
+\(x_1, y_1\): Tọa độ của điểm đầu tiên.
+
+\(x_2, y_2\): Tọa độ của điểm thứ hai.
+
+\(x\): Giá trị độc lập cần nội suy. x là giá trị độc lập, ở đây là chỉ số (index): 0, 1, 2, 3,...
+
+\(y\): Giá trị phụ thuộc được ước lượng.
 
 
-(x_1, y_1): Tọa độ của điểm đầu tiên.
-
-
-(x_2, y_2): Tọa độ của điểm thứ hai.
-
-
-(x): Giá trị độc lập cần nội suy. x là giá trị độc lập, ở đây là chỉ số (index): 0, 1, 2, 3,...
-
-
-(y): Giá trị phụ thuộc được ước lượng.
 
 ### 5. Cập nhật và xử lý dữ liệu
 
