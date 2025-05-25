@@ -704,6 +704,10 @@ pd.to_datetime(df[<col>], [format])
 ### 6. Trực quan hoá dữ liệu với Pandas
 
 
+
+
+- plot.barh() là viết tắt của "bar horizontal". 
+
 ## /1/2024: Buổi học : 
 
 ### Matplotlib Plotting
