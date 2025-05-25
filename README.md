@@ -614,9 +614,21 @@ df.fillna(method='backfill'): lấy dòng dưới điền lên
 
 - Thực hiện nội suy tuyến tính: df.interpolate() (tính độ dài của 1 khoảng cách rồi sau đó nhân lên)
 
-nếu y1 và y3 ​là các giá trị của các điểm dữ liệu và y3 là giá trị nan cần được tính ,  công thức nội suy tuyến tính là:
+Giả sử có hai điểm đã biết ((x_1, y_1)) và ((x_2, y_2)), giá trị (y) tại điểm (x) (với (x_1 \leq x \leq x_2)) được tính như sau:
 
-\[ y_2 = \frac{y_1 + y_3}{2} \]
+[ y = y_1 + (y_2 - y_1) \cdot \frac{x - x_1}{x_2 - x_1} ]
+
+
+(x_1, y_1): Tọa độ của điểm đầu tiên.
+
+
+(x_2, y_2): Tọa độ của điểm thứ hai.
+
+
+(x): Giá trị độc lập cần nội suy. x là giá trị độc lập, ở đây là chỉ số (index): 0, 1, 2, 3,...
+
+
+(y): Giá trị phụ thuộc được ước lượng.
 
 ### 5. Cập nhật và xử lý dữ liệu
 
