@@ -179,6 +179,17 @@ Nếu có 2 cặp dấu ngoặc vuông ở đầu và 2 cặp dấu ngoặc vuô
 #### 2. Thuộc tính của mảng
 <img width="678" alt="Ảnh chụp Màn hình 2024-01-26 lúc 14 52 54" src="https://github.com/berylhoang2501/Data-Manipulation-and-Visualization-with-Python/assets/152646327/0fd4a6d1-f065-41ac-9acc-5ff5afa5be3b">
 
+**độ lệch chuẩn (std) đo mức “văng” của dữ liệu quanh trung bình.**
+<img width="1200" height="674" alt="image" src="https://github.com/user-attachments/assets/b5d02f56-0799-4e04-b68c-cb1b33790785" />
+
+- Std lớn → dữ liệu phân tán mạnh, khó dự đoán. Std nhỏ → dữ liệu ổn định, sát trung bình.
+
+- Hai dãy đều có mean = 50:
+
+A: [49, 50, 50, 51] → std ≈ 0.8 (rất ổn định)
+
+B: [30, 40, 60, 70] → std ≈ 18.7 (phân tán mạnh)
+
 #### 3. Tạo mảng bằng các hàm tiện ích
 
 lúc truyền dữ liệu phải truyền theo dạng shape(a,b) đầy đủ các thông số chứ không thể ghi 1 thông số như mảng 1 chiều 
